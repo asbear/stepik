@@ -1,5 +1,4 @@
-#!/usr/bin/python
-bind = "0.0.0.0:8080"
+
 
 def app(environ, start_response):
     body = [bytes(i + '\n', 'ascii') for i in environ['QUERY_STRING'].split('&')
